@@ -1,0 +1,189 @@
+    /* FUENTES */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+/* NAV */
+    .shadowNav {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        line-height: 2.1em;
+        border: 2px solid transparent;
+    }
+
+
+    .logo:hover {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
+    .cartImg {
+        width: 45px; 
+        cursor: pointer;
+    }
+
+    #cartNumbers {
+        background-color: #206a5d;
+        width: 23px;
+        height: 23px;
+        border-radius: 100%;
+        text-align: center;
+        position: relative;
+        top: -11px;
+        right: 6px;
+        cursor: pointer;
+    }
+
+    .imagenCarrito {
+        height: 250px;
+    }
+
+
+/* HOME */
+    #fondoHome {
+        background-color: #f1f1e8;
+        padding: 20px;
+    }
+
+    #fondoHome2 {
+        background-color: #bfdcae;
+    } 
+
+    .textoPrincipal {
+        margin-top: 150px;
+        color: #206a5d;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .subtextoPrincipal {
+        color: #2AAA4F;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .imagenesPlantasHome {
+        width: 230px;
+        height: 300px;
+        border-radius: 100%;
+    }
+
+    .imagenesPlantasHome:hover{
+        filter: brightness(115%);
+        cursor: pointer;
+    }
+
+
+/* TIENDA ONLINE */
+    .imagenLogoFooter {
+        height: 150px;
+    }
+
+    .imagenPresentacionTienda {
+        width: 300px;
+        height: 200px;
+    }
+
+    .imagenesProducto {
+        width: 270px;
+        height: 300px;
+        border-radius: 5%;
+        cursor: pointer;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid rgba(0, 0, 0, 0.125);
+        border-radius: 5%;
+        cursor: pointer;
+    }
+    
+    .shadow {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    
+/* MODAL */
+    .imagenesModal {
+        height: 95px;
+        width: 90px;
+        border-radius: 5%;
+    }
+
+    .inputCuenta {
+        max-width: 49px;
+    }
+
+    .table-image {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .precioTotal {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+
+/* FOOTER GENERAL */
+    .textoFooter {
+        color: #9BE3A2;
+        font-family: 'Ubuntu', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .subtextoFooter {
+        color: ivory;
+        font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .sm-button {
+        color: #fff;
+        width: 37px;
+        height: 37px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 37px;
+        transition: all 0.5s ease;
+        line-height: 2.1em;
+    }
+
+    .sm-button.instagram:hover, .sm-button.facebook:hover {
+        border: 2px solid;
+        background-color: transparent;
+        transform: rotateY(360deg);
+    }  
+
+    .sm-button.instagram {
+        background: #DB4189;
+        margin-left: 20px;
+    }
+
+    .sm-button.facebook {
+        background: #0673E7;
+    }
+
+    .sm-button.instagram:hover, .sm-button.facebook:hover {
+        color: #fff;
+        border-color: #fff;
+    }
+    
+
+
+
+
+

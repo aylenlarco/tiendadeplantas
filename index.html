@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tienda de Plantas</title>
+        <!-- REQUIRED META TAGS -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="title" content="Tienda de Plantas">
+        <!-- BOOTSTRAP CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- MI CSS -->
+            <link rel="stylesheet" href="css/styles.css">
+        <!-- SM BUTTONS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadowNav">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="imagenes/logo1.png" class="logo" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="html/market.html">Tienda</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-nav">
+                        <div class="d-flex justify-content-center mt-3">
+                            <a type="button" data-toggle="modal" data-target="#cartModal">
+                                <img class="img-fluid cartImg" src="imagenes/cart.png" alt="cart"></i>
+                            </a>   
+                            <div id="cartNumbers"> 
+                                <span class="fw-bold text-white" id="cart-counter">0</span> <!--JS-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="container">
+                <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom-0">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Tu carrito de compras
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table table-image">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Planta</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <div class="d-flex justify-content-end">
+                                    <h5>Total: $<span class="text-success" id="total-price"></span></h5> 
+                                </div>
+                            </div>
+                            <div class="modal-footer border-top-0 d-flex justify-content-between">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="container-fluid" id="fondoHome">
+                <div class="row mt-5">
+                    <div class="col-lg-7 text-center text-lg-left">
+                        <div class="mb-4">
+                            <h1 class="textoPrincipal fw-bold mb-4"> Somos Tienda de Plantas</h1>
+                            <h3 class="subtextoPrincipal mb-4">¡Hacenos tu pedido! Envíos a GBA y CABA</h3>
+                        </div>
+                        <div class="mb-8">
+                            <a class="btn btn-outline-success btn-lg mt-2 mt-lg-0 mb-3" href="html/tienda.html">Ingresá a nuestra Tienda</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <img class="img-fluid mt-5 mb-lg-0" src="imagenes/6.png" alt="ImagenPlantas">
+                    </div>
+                </div> 
+            </section>
+            <section class="container-fluid" id="fondoHome2">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="textoPrincipal fw-bold mb-5 mt-5">¡Conocé nuestras plantas!</h2>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-column flex-lg-row justify-content-around mb-4">
+                        <div class="mt-4 mt-lg-0 text-center">
+                            <img class="img-fluid imagenesPlantasHome" src="imagenes/ficus.jpg" alt="Ficus">
+                            <h4 class="mt-2 mb-0 textoPrincipal">Ficus</h4>
+                            <p class="mb-0 subtextoPrincipal fst-italic">De rápido crecimiento</p>
+                        </div>
+                        <div class="mt-4 mt-lg-0 text-center">
+                            <img class="img-fluid imagenesPlantasHome" src="imagenes/monstera.jpg" alt="Monstera">
+                            <h4 class="mt-2 mb-0 textoPrincipal">Monstera</h4>
+                            <p class="mb-0 subtextoPrincipal fst-italic">Endémica de selvas tropicales</p>
+                        </div>     
+                        <div class="mt-4 mt-lg-0 text-center">
+                            <img class="img-fluid imagenesPlantasHome" src="imagenes/calathea.jpg" alt="Calathea">
+                            <h4 class="mt-2 mb-0 textoPrincipal">Calathea</h4>
+                            <p class="mb-0 subtextoPrincipal fst-italic">De hojas coloridas y variadas</p>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+        </main>
+        <footer>    
+            <section class="container-fluid bg-success">
+                <div class="row">
+                    <div class="col-lg-4 text-center text-lg-center mt-lg-0">
+                        <img class="img-fluid mb-3 mt-5 imagenLogoFooter" src="imagenes/logo.png" alt="TiendaDePlantas">
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-center mt-lg-0">
+                        <h4 class="textoFooter fw-bold mb-3 mt-5">Contacto</h4>
+                        <h5 class="subtextoFooter mt-2">tiendadeplantas@gmail.com</h5>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-center mt-lg-0">
+                        <h4 class="textoFooter fw-bold mb-3 mt-5">¡Seguinos en las redes!</h4>
+                        <div>
+                            <a class="sm-button facebook" href=""><i class="fa fa-facebook"></i></a>
+                            <a class="sm-button instagram" href=""><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <hr class="border-top border-light">
+                        </div>    
+                        <div class="col-12 text-center text-lg-left mb-1">
+                            <small class="text-white">© 2021 - Todos los derechos reservados</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>  
+        <!-- BOOTSTRAP JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- JQUERY -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+        <!-- MI JS -->
+            <script src="js/cart.js"></script> 
+    </body>
+</html>
