@@ -23,7 +23,7 @@
                 
                     modalCart( plantImg, plantTitle, plantPrice );
 
-                    cartCounterUpdate()
+                    cartCounterUpdate();
                     
                 };    
                
