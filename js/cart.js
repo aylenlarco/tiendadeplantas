@@ -117,7 +117,7 @@
             // Eliminar plantas del carrito
                 function removePlantFromCart(event) {
                     const removeBtnClicked = event.target;
-                    removeBtnClicked.closest('.shoppingCartPlant').remove();
+                    removeBtnClicked.closest( '.shoppingCartPlant' ).remove();
                     cartTotalPrice();
                     cartCounterUpdate();
                 };
@@ -125,18 +125,37 @@
             // Cantidad del carrito (Input)
                 function cartQuantityChange(event) {
                     const inputCartChange = event.target;
-                    inputCartChange.value <= 0 ? (inputCartChange.value = 1) : null;
+                    inputCartChange.value <= 0 ? ( inputCartChange.value = 1 ) : null;
                     cartTotalPrice();
                     cartCounterUpdate();
                 };
 
-              
+            // Finalizar compra
+                const botonFinalizarCompra = document.querySelector( '.btn-finalizar-compra' );
 
+                botonFinalizarCompra.addEventListener('click', finalizarCompraTotal);
+
+                function finalizarCompraTotal() {
+                    showCart.innerHTML = '';
+                    cartTotalPrice();
+                    cartCounterUpdate();
+                };
+
+            // Vaciar todo el carrito
+                const botonVaciarCarrito = document.querySelector( '.btn-vaciar-carrito' );
+                
+                botonVaciarCarrito.addEventListener('click', vaciarCarritoCompleto);
+
+                function vaciarCarritoCompleto() {
+                    showCart.innerHTML = '';
+                    cartTotalPrice();
+                    cartCounterUpdate();
+                };
         };
         
         shoppingCart();
         
-        // Corregir el cartCounter cuando es el mismo producto, porque no sigue sumando en el cartCounter (solo en el modal)
+        
                 
                 
        
