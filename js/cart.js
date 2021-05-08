@@ -155,6 +155,7 @@
         
         shoppingCart();
         
+        console.log('bye proyecto 🌠');
         
                 
                 
